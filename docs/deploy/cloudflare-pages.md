@@ -56,3 +56,21 @@ Validar que existan:
 - `dist/_redirects`
 
 Con eso, cada push a la rama configurada en Pages dispara deploy automático.
+
+## Troubleshooting
+
+### Error: `main.ts` MIME type `video/mp2t`
+
+Si ves:
+
+`Failed to load module script ... server responded with a MIME type of "video/mp2t"`
+
+la causa es que se está publicando el código fuente (`index.html` con `src/main.ts`) en lugar del build de Vite.
+
+Corregí estos campos en Cloudflare Pages:
+
+- **Build command**: `npm run build`
+- **Build output directory**: `dist`
+- **Root directory**: vacío (raíz del repo)
+
+Luego hacé un redeploy. El sitio correcto debe cargar `assets/*.js` desde `dist/index.html`, no `src/main.ts`.

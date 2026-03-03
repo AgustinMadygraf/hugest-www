@@ -51,8 +51,8 @@
 <script setup lang="ts">
 import MaterialSymbolIcon from "./icons/MaterialSymbolIcon.vue";
 import { siteContent } from "../content/siteContent";
-import higieneImage from "../assets/images/higiene.png";
-import ondaImage from "../assets/images/onda.png";
+import higieneImage from "../assets/images/servicio-1.png";
+import ondaImage from "../assets/images/servicio-2.png";
 
 const categoryImages: Record<string, string> = {
   higiene: higieneImage,

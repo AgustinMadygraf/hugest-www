@@ -117,8 +117,8 @@
 
 <script setup lang="ts">
 import { ref, watch, onMounted, onBeforeUnmount } from "vue";
-import heroOndaImage1 from "../assets/images/hero-onda-1.png";
-import heroOndaImage2 from "../assets/images/hero-onda-2.png";
+import heroOndaImage1 from "../assets/images/hero-1.png";
+import heroOndaImage2 from "../assets/images/hero-2.png";
 import { siteContent } from "../content/siteContent";
 import { uiConfig } from "../config/ui";
 

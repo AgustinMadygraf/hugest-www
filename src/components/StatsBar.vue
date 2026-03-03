@@ -1,20 +1,44 @@
-<script setup lang="ts">
-const stats = [
-  { value: '1500+', label: 'Trees Trimmed' },
-  { value: '12+', label: 'Years Exp', border: true },
-  { value: '4.9/5', label: 'Rating' },
-]
-</script>
-
 <template>
-  <section class="grid grid-cols-3 gap-1 px-4 py-8 text-center bg-slate-100 dark:bg-slate-900/50">
-    <div 
-      v-for="stat in stats" 
-      :key="stat.label"
-      :class="{ 'border-x border-slate-200 dark:border-slate-800': stat.border }"
+  <section class="mb-8 px-4">
+    <div
+      class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-primary/10 p-4 sm:flex-row sm:items-center sm:justify-between"
     >
-      <p class="text-primary text-xl font-black">{{ stat.value }}</p>
-      <p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-bold">{{ stat.label }}</p>
+      <div class="flex items-center gap-3">
+        <div
+          class="flex size-10 items-center justify-center rounded-full bg-primary/20"
+        >
+          <MaterialSymbolIcon name="eco" class="size-6 text-primary" />
+        </div>
+        <div>
+          <p
+            class="text-[10px] font-bold uppercase leading-none tracking-wider text-slate-400"
+          >
+            {{ siteContent.stats.label }}
+          </p>
+          <p class="text-xl font-bold text-slate-100">
+            {{ siteContent.stats.recycledTotal }}
+            <span class="text-sm font-medium text-primary">{{
+              siteContent.stats.recycledUnit
+            }}</span>
+          </p>
+        </div>
+      </div>
+      <div class="text-left sm:text-right">
+        <p
+          class="flex items-center gap-1 text-sm font-bold text-primary sm:justify-end"
+        >
+          <MaterialSymbolIcon name="trending_up" class="size-4" />
+          {{ siteContent.stats.growth }}
+        </p>
+        <p class="text-[10px] text-slate-400">
+          {{ siteContent.stats.growthReference }}
+        </p>
+      </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { siteContent } from "../content/siteContent";
+import MaterialSymbolIcon from "./icons/MaterialSymbolIcon.vue";
+</script>

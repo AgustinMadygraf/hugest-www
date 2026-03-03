@@ -1,28 +1,50 @@
 {
-  "name": "huggest-www",
+  "name": "upp-www",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "engines": {
-    "node": "20.x"
-  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .js,.ts,.vue",
+    "lint:fix": "eslint . --ext .js,.ts,.vue --fix",
+    "format": "prettier --write \"src/**/*.{ts,vue,css}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,vue,css}\""
   },
   "dependencies": {
-    "@tailwindcss/container-queries": "^0.1.1",
-    "@tailwindcss/forms": "^0.5.11",
-    "vue": "^3.4.21"
+    "@fontsource/space-grotesk": "^5.2.10",
+    "vue": "^3.4.38"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "autoprefixer": "^10.4.18",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.4",
-    "vue-tsc": "^1.8.27"
+    "@eslint/js": "^9.39.3",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.9",
+    "@types/node": "^20.17.57",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "@vue/test-utils": "^2.4.6",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.39.3",
+    "eslint-plugin-vue": "^10.8.0",
+    "husky": "^9.1.7",
+    "jsdom": "^28.1.0",
+    "lint-staged": "^16.3.1",
+    "postcss": "^8.4.47",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.5.4",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18",
+    "vue-tsc": "^2.1.6"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,vue,css}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }

@@ -1,188 +1,296 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+
+<html lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Unión Papelera - Venta Directa de Fábrica</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#13ec5b",
-            "background-light": "#f6f8f6",
-            "background-dark": "#102216",
-          },
-          fontFamily: {
-            "display": ["Work Sans"]
-          },
-          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-        },
-      },
-    }
-  </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d411",
+                        "primary-dark": "#0b8a0b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                        "forest-green": "#1b4332",
+                        "charcoal": "#1a1c1a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
 <style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
-<!-- Header Navigation -->
-<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-<div class="flex items-center p-4 justify-between max-w-screen-xl mx-auto">
-<div class="flex items-center gap-2">
-<div class="text-primary" data-icon="tree">
-<span class="material-symbols-outlined text-3xl">park</span>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-charcoal dark:text-slate-100 font-display">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-forest-green/10 px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 48 48">
+<path d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"></path>
+</svg>
 </div>
-<h2 class="text-slate-900 dark:text-slate-100 text-xl font-black leading-tight tracking-tight">HUGGEST</h2>
+<h1 class="text-xl font-extrabold tracking-tight text-forest-green dark:text-primary">Unión Papelera</h1>
 </div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Productos</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Sostenibilidad</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Nosotros</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contacto</a>
+</nav>
 <div class="flex items-center gap-4">
-<button class="flex items-center justify-center p-2 text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined">search</span>
-</button>
-<button class="flex items-center justify-center p-2 text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined">menu</span>
-</button>
+<button class="bg-primary hover:bg-primary-dark text-forest-green font-bold py-2.5 px-6 rounded-lg text-sm transition-all shadow-sm">
+                    Solicitar Cotización
+                </button>
 </div>
 </div>
 </header>
-<main class="relative">
 <!-- Hero Section -->
-<section class="relative overflow-hidden">
-<div class="flex flex-col @container">
-<div class="relative w-full aspect-[4/5] md:aspect-video bg-cover bg-center" data-alt="Professional arborist pruning a tall urban tree" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWM2TaYaNi7__teUw2hiVIos87Rnpgu2q9XhD2F4r_1sPSgNbGsAPg5xYjIoJXn9cx1BNNSrei75MBehq864iwmxcRivfe-stk1P8wHXLae0kYTQv5ZAFwx8bbYfK520E_tRPJv0rw2WgPwTjSnBnN9ygP8PA7fOAa7APJPNuFLWmHhgQZbFJW15NeC1zZ4UITHqR5LSEbOwsnGOTt-qEyAkYdvrylitsMSi3VVzOhoUSF8bU2Ab-_FvzTMhnYxpDGKvoh_g07i7w')">
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/40 to-transparent"></div>
-<div class="absolute bottom-0 left-0 right-0 p-6 flex flex-col gap-4">
-<span class="inline-block px-3 py-1 bg-primary text-background-dark text-xs font-bold uppercase tracking-widest rounded-full w-fit">Urban Specialists</span>
-<h1 class="text-white text-4xl font-black leading-tight tracking-tight">
-              Professional Urban Tree Care
-            </h1>
-<p class="text-slate-200 text-base font-normal leading-relaxed max-w-md">
-              Expert pruning and maintenance for city landscapes. Modern solutions for your green space.
-            </p>
-<div class="pt-2">
-<button class="w-full flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-background-dark font-black py-4 rounded-xl transition-all shadow-lg shadow-primary/20">
-<span class="material-symbols-outlined">chat</span>
-                Chat on WhatsApp now
-              </button>
+<section class="relative h-[85vh] min-h-[600px] flex items-center pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Industrial large recycled paper rolls in factory" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9z5jOxq31MnxHS766VpBXr8O8Mr8zW_vSLPGfCqph1wHapv_QuzeAHJoB666uM_5U7NLK1QAuoJbIHNM2G9e6Ped-GSi0xuUX242yQKBu6Y5rikTeUjKrNBnePU0ucQMQtHcldEx2Ti08spc25dvQqaH-v-nv8SXzlRqeJiplAe_0ptcJYT4S3pP6DwpSOBvfN4AizUbGp5aiN2RoYqx7EBl3lT8lXCkBaU_3NeGee6Vzsw4dKrO0eJCttTd4Ny29fP6snNRqKMs')"></div>
 </div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-20 w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-primary/20 border border-primary/30 text-primary rounded-full text-xs font-bold tracking-widest uppercase mb-6">B2B Solutions</span>
+<h1 class="text-5xl lg:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tighter">
+                    VENTA DIRECTA <br/>DE FÁBRICA
+                </h1>
+<p class="text-xl text-slate-200 mb-10 font-medium max-w-lg">
+                    Papel 100% Reciclado de alta resistencia para embalaje industrial y consumo masivo. Sostenibilidad en cada fibra.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-primary-dark text-forest-green px-8 py-4 rounded-lg font-bold text-lg transition-all flex items-center gap-2">
+                        Ver Catálogo
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-lg transition-all">
+                        Conoce nuestro proceso
+                    </button>
 </div>
 </div>
 </div>
 </section>
-<!-- Stats Bar -->
-<section class="grid grid-cols-3 gap-1 px-4 py-8 text-center bg-slate-100 dark:bg-slate-900/50">
+<!-- Trust Bar -->
+<div class="bg-white dark:bg-background-dark border-b border-forest-green/5">
+<div class="max-w-7xl mx-auto px-6 lg:px-20 py-8">
+<div class="flex flex-wrap items-center justify-between gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+<span class="text-sm font-bold uppercase tracking-widest">Certificación FSC®</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">verified</span>
+<span class="text-sm font-bold uppercase tracking-widest">Norma ISO 9001</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">eco</span>
+<span class="text-sm font-bold uppercase tracking-widest">Compromiso Sustentable</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+<span class="text-sm font-bold uppercase tracking-widest">+500 Empresas Confían</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Categories -->
+<section class="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
 <div>
-<p class="text-primary text-xl font-black">1500+</p>
-<p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-bold">Trees Trimmed</p>
+<h2 class="text-4xl font-black text-forest-green dark:text-slate-100 mb-4 tracking-tight">Nuestros Productos</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl font-medium">Soluciones integrales en papel para todas las necesidades industriales y comerciales.</p>
 </div>
-<div class="border-x border-slate-200 dark:border-slate-800">
-<p class="text-primary text-xl font-black">12+</p>
-<p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-bold">Years Exp</p>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all" href="#">
+                Ver todos los productos <span class="material-symbols-outlined">east</span>
+</a>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Product Card 1 -->
+<div class="group bg-white dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-forest-green/5 hover:border-primary/30 transition-all shadow-sm hover:shadow-xl">
+<div class="h-80 overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Stacks of brown kraft paper rolls" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvvEJtREvpm7fwe8GrPB__yHIgHa4FYGIVDJlWVI7rrxT1fKZP8WZG6yyktiN60X-ng7YG82ollTXRHeImiBYeMP0JvSNwrx47WppEaKw67XYAgVxBc2eYVCQPiH3R6fcADSLOdjwKKXckWOoIR_ighqaosCdTpgSROzS0VJLjD1XNAkX29R3iDVafkLqfO9hpohRxokpy7yimdNkOGBe3vtKnPGLnCIsDFD0Pijj5KgGoaO6Y2bkQXKN2bM9pt7QPNX3_p6QhOKo')"></div>
+<div class="absolute top-4 left-4 bg-forest-green text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Top Seller</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-extrabold text-forest-green dark:text-slate-100 mb-4">Papel Kraft</h3>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">layers</span>
+                            Gramajes: 60g, 80g, 100g, 120g
+                        </div>
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">settings_overscan</span>
+                            Anchos personalizados hasta 240cm
+                        </div>
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">high_res</span>
+                            Alta resistencia mecánica y acabado premium
+                        </div>
+</div>
+<button class="w-full py-4 border-2 border-primary text-forest-green dark:text-primary font-bold rounded-xl group-hover:bg-primary group-hover:text-forest-green transition-all">
+                        Especificaciones Técnicas
+                    </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-white dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-forest-green/5 hover:border-primary/30 transition-all shadow-sm hover:shadow-xl">
+<div class="h-80 overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Bulk hygienic paper product pack" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMMALVS3w7c_oB5azlOsMxEX3bO0tmlW8a1psquI7WngCAi4ZHWm7XwZrhMmfvbY2Vu8FvR852cNg42OqfQKpkx1AhJCUxZkEEZ-pA80NOsokQASckwNyf_sPWtz00rrQtD02KHAZ-DLGamHU56ggMLVusnuWY_SrHStlR234zXt1xE1ieNcR1xcpFnH9SYFOiRli6R2iNQa8WRt1dqJZSeIcSOEZo3d3vz-wyAe7s92FcrjQ7nTUKj2KH5d2Qo_zkIXZKKYImFNw')"></div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-extrabold text-forest-green dark:text-slate-100 mb-4">Línea Higiene</h3>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">opacity</span>
+                            Máxima absorción y suavidad garantizada
+                        </div>
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">eco</span>
+                            Fibras vírgenes y recicladas certificadas
+                        </div>
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">package_2</span>
+                            Formatos: Bobinas Master y Rollos Fraccionados
+                        </div>
+</div>
+<button class="w-full py-4 border-2 border-primary text-forest-green dark:text-primary font-bold rounded-xl group-hover:bg-primary group-hover:text-forest-green transition-all">
+                        Consultar Variantes
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Logistics Section -->
+<section class="bg-forest-green text-white py-20 px-6 lg:px-20 overflow-hidden">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative z-10">
+<span class="text-primary font-bold text-sm tracking-widest uppercase mb-4 block">Logística Eficiente</span>
+<h2 class="text-4xl lg:text-5xl font-black mb-8 leading-tight">Entregas en Ringuelet <br/>y alrededores</h2>
+<p class="text-xl text-slate-300 mb-10 leading-relaxed font-medium">
+                    Contamos con flota propia de camiones equipados para garantizar la integridad del papel durante el transporte. Tiempos de entrega optimizados para grandes volúmenes B2B.
+                </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-white/5 p-6 rounded-xl border border-white/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">local_shipping</span>
+<h4 class="font-bold mb-2">Flota Propia</h4>
+<p class="text-sm text-slate-400">Entrega directa sin intermediarios.</p>
+</div>
+<div class="bg-white/5 p-6 rounded-xl border border-white/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">timer</span>
+<h4 class="font-bold mb-2">24/48hs Delivery</h4>
+<p class="text-sm text-slate-400">Stock permanente asegurado.</p>
+</div>
+</div>
+</div>
+<div class="relative h-[450px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
+<div class="absolute inset-0 bg-slate-200">
+<div class="w-full h-full bg-cover bg-center grayscale contrast-125 opacity-80" data-alt="Top down abstract map view of urban area" data-location="Ringuelet, Argentina" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAx4NXybodUbICnolL9o_C_VcvE7sNWerv8PNsKOWKkG-ern0PoigGI8H13z3rPQL1ftCmEK1QswPKfQBnt-frDU2uGAy5bgBsd2npnkBBgfbXwvk3Hln-t0RMPdTHKuAfoPHltBQeD5rSejZmCakuLOQ9xTTFfXrvW8fz41rQrG8LX5m_9L5iOrc9MhmsRoERrhyFQ2IEKIHoticOz-umsQudwJW4nkn-ku6ZsfUX9MRbtzhnagUhfHXDIdcD-D3tI-ToDk9EY5IE')"></div>
+<!-- Marker Overlay -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/40 rounded-full animate-ping"></div>
+<div class="relative bg-primary text-forest-green p-3 rounded-full shadow-lg">
+<span class="material-symbols-outlined font-bold">location_on</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-6 left-6 right-6 bg-forest-green/90 backdrop-blur-md p-6 rounded-2xl">
+<h5 class="font-bold text-lg mb-1">Centro de Distribución Central</h5>
+<p class="text-sm text-slate-300">Calle Industrial 450, Ringuelet, Buenos Aires</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-charcoal text-slate-300 pt-20 pb-10 px-6 lg:px-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 text-white mb-6">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 48 48">
+<path d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"></path>
+</svg>
+</div>
+<span class="text-xl font-extrabold tracking-tight">Unión Papelera</span>
+</div>
+<p class="text-sm leading-relaxed mb-6">Líderes en fabricación de papel reciclado desde 1985. Comprometidos con el desarrollo industrial sostenible.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-charcoal transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-charcoal transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
 </div>
 <div>
-<p class="text-primary text-xl font-black">4.9/5</p>
-<p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-bold">Rating</p>
+<h4 class="text-white font-bold mb-6">Navegación</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Catálogo Digital</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Proceso de Reciclado</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sostenibilidad</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Venta Corporativa</a></li>
+</ul>
 </div>
-</section>
-<!-- Before & After Results -->
-<section class="py-8">
-<div class="flex items-center justify-between px-4 mb-4">
-<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-black leading-tight">Project Results</h2>
-<a class="text-primary text-sm font-bold flex items-center gap-1" href="#">View all <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+<div>
+<h4 class="text-white font-bold mb-6">Contacto</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+                            +54 (221) 456-7890
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            ventas@unionpapelera.com
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            Calle Industrial 450, Ringuelet<br/>La Plata, Argentina
+                        </li>
+</ul>
 </div>
-<div class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4">
-<div class="flex gap-4 px-4">
-<!-- Card 1 -->
-<div class="snap-center shrink-0 w-[280px] group">
-<div class="relative w-full aspect-square bg-cover bg-center rounded-2xl overflow-hidden mb-3" data-alt="Before and after residential tree pruning result" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDa6Lvkvk1vRj0yiPw1vfJ0BNFQk47VVVBu3ml-444ef6GtnRr6YVEEFmBOorF77tYe8Exw0GJxDIYnAV_uJaEZDrj6NZ5LZrWePs82vtR9vmEj0Nia1tCujNH6OpRHMk-_Ydukjua2YPRuF8EUObumKc3AZZKSWU0oMlQvNBcmmiKIJB9EAnZHifUfvmwSC1dKDKyG9ne8nLeMo8LY58kBeQLTOeh1WX5wZ4T_5Z83EXwiU8xOg6iDK4xiyxZt_KeRx_QBD1YE2I8')">
-<div class="absolute top-3 left-3 px-2 py-1 bg-background-dark/80 backdrop-blur-sm text-white text-[10px] font-bold rounded">BEFORE &amp; AFTER</div>
-</div>
-<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Residential Pruning</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm">Safe &amp; efficient clearance</p>
-</div>
-<!-- Card 2 -->
-<div class="snap-center shrink-0 w-[280px] group">
-<div class="relative w-full aspect-square bg-cover bg-center rounded-2xl overflow-hidden mb-3" data-alt="Beautifully manicured garden hedge after professional service" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2UlKPHwAMuOwAtseFwjO4_KDYBxSDkWm-mXzMdrgcwORP0qEcPDXQqhi5IbmQWcAZc17mXpapDCnA-0Kf60pydlZGy5isveOhk2OXxqHWI8N0fWOPCQYKOxfY2Gz19zyBNSBmkLZG8wKahryZhS8R3fxO42DS6VUEoUzfY7m6KfPJAA_ewwOqqjNPkRQvi1oIcS_pPRdqIRmOe9uCPlfwG43yQwTO_lqsxRQlSsldkj4ZjOR4i8D5frpWw6xKRpy_ESbu5XAjIr8')">
-<div class="absolute top-3 left-3 px-2 py-1 bg-background-dark/80 backdrop-blur-sm text-white text-[10px] font-bold rounded">FINISHED</div>
-</div>
-<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Garden Clearing</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm">Immediate visual impact</p>
-</div>
-<!-- Card 3 -->
-<div class="snap-center shrink-0 w-[280px] group">
-<div class="relative w-full aspect-square bg-cover bg-center rounded-2xl overflow-hidden mb-3" data-alt="Modern geometric hedge trimming in urban backyard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTVQZ-UkFNwg--MEXlpCvHHnwUZwSknjg_ySfB3uGM6va0j3MBz6XuSnkfx7LhoUntwpXCE4-4iDVWyMCtp5JB_taJht1HDypLc9aaqEkyt-oJxo4M3Khiws7GQy0dLAT6ZWEu8h3Juvm19nmuL7uBj9IHbjdgzpZs30CRkI8-vEuhsKAK57weVdkOkTZlJc5ctyZMeE9daJKhPkJroR-ZeY7wDWv6tvjJO18Wbnz_7NSdHLBvWT5QU_405saylhAHYbJg4s8ZaoI')">
-<div class="absolute top-3 left-3 px-2 py-1 bg-background-dark/80 backdrop-blur-sm text-white text-[10px] font-bold rounded">UPGRADE</div>
-</div>
-<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Hedge Sculpting</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm">Urban aesthetic precision</p>
+<div>
+<h4 class="text-white font-bold mb-6">Newsletter</h4>
+<p class="text-xs mb-4">Recibe actualizaciones sobre nuevos productos y sustentabilidad.</p>
+<div class="flex gap-2">
+<input class="bg-white/5 border-white/10 rounded-lg px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary outline-none" placeholder="Tu email" type="email"/>
+<button class="bg-primary text-charcoal font-bold p-2 rounded-lg hover:bg-primary-dark transition-all">
+<span class="material-symbols-outlined">send</span>
+</button>
 </div>
 </div>
 </div>
-</section>
-<!-- Services Grid -->
-<section class="px-4 py-8 bg-slate-900 text-white rounded-t-[2rem]">
-<h2 class="text-2xl font-black mb-6">Our Services</h2>
-<div class="grid grid-cols-2 gap-4">
-<div class="p-5 bg-white/5 border border-white/10 rounded-2xl">
-<span class="material-symbols-outlined text-primary mb-3 text-3xl">content_cut</span>
-<h4 class="font-bold text-lg mb-1">Precision Pruning</h4>
-<p class="text-slate-400 text-xs">Aesthetic and health maintenance</p>
-</div>
-<div class="p-5 bg-white/5 border border-white/10 rounded-2xl">
-<span class="material-symbols-outlined text-primary mb-3 text-3xl">dangerous</span>
-<h4 class="font-bold text-lg mb-1">Tree Removal</h4>
-<p class="text-slate-400 text-xs">Safe extraction of hazardous trees</p>
-</div>
-<div class="p-5 bg-white/5 border border-white/10 rounded-2xl">
-<span class="material-symbols-outlined text-primary mb-3 text-3xl">health_and_safety</span>
-<h4 class="font-bold text-lg mb-1">Health Audit</h4>
-<p class="text-slate-400 text-xs">Disease detection and prevention</p>
-</div>
-<div class="p-5 bg-white/5 border border-white/10 rounded-2xl">
-<span class="material-symbols-outlined text-primary mb-3 text-3xl">emergency_home</span>
-<h4 class="font-bold text-lg mb-1">Storm Relief</h4>
-<p class="text-slate-400 text-xs">24/7 Emergency clearing services</p>
+<div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate-500">
+<p>© 2024 Unión Papelera. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-white" href="#">Términos y Condiciones</a>
+<a class="hover:text-white" href="#">Política de Privacidad</a>
 </div>
 </div>
-</section>
+</div>
+</footer>
 <!-- Floating WhatsApp Button -->
-<a class="fixed bottom-24 right-6 z-[60] bg-primary text-background-dark size-14 rounded-full flex items-center justify-center shadow-2xl shadow-primary/40" href="https://wa.me/#">
-<span class="material-symbols-outlined text-3xl font-bold">chat_bubble</span>
+<a class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300" href="#">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.73.917 3.674 1.4 5.653 1.401 6.01 0 10.9-4.89 10.903-10.9 0-2.912-1.134-5.651-3.191-7.71s-4.797-3.191-7.712-3.191c-6.01 0-10.9 4.89-10.903 10.9-.001 1.83.456 3.618 1.321 5.2l-.995 3.642 3.727-.977zm11.367-7.384c-.338-.17-2.001-.986-2.312-1.098-.311-.112-.538-.17-.764.17-.226.341-.875 1.098-1.072 1.325-.197.226-.395.253-.732.084-.337-.17-1.425-.525-2.716-1.676-1.003-.894-1.681-2.002-1.879-2.339-.197-.337-.021-.52.149-.688.152-.152.337-.395.507-.592.17-.197.226-.338.338-.562.112-.224.056-.421-.028-.592-.084-.17-.764-1.841-1.047-2.514-.275-.664-.555-.573-.764-.584-.197-.01-.424-.011-.65-.011s-.593.084-.904.421c-.311.338-1.187 1.161-1.187 2.829 0 1.667 1.214 3.279 1.383 3.504.17.226 2.39 3.65 5.79 5.117.807.348 1.439.558 1.93.714.811.258 1.549.222 2.133.134.65-.098 2.001-.818 2.284-1.611.283-.792.283-1.472.197-1.611-.084-.14-.311-.226-.65-.395z"></path>
+</svg>
 </a>
-</main>
-<!-- Bottom Navigation Bar -->
-<nav class="fixed bottom-0 left-0 right-0 z-50 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-6 pb-6 pt-3">
-<div class="flex justify-between items-center max-w-md mx-auto">
-<a class="flex flex-col items-center gap-1 text-slate-900 dark:text-slate-100" href="#">
-<span class="material-symbols-outlined">home</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Home</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
-<span class="material-symbols-outlined">grid_view</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Services</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
-<span class="material-symbols-outlined">photo_library</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Portfolio</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
-<span class="material-symbols-outlined">mail</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Contact</span>
-</a>
-</div>
-</nav>
-<style>
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-
-```</body></html>
+</body></html>

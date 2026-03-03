@@ -154,7 +154,7 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, watch } from "vue";
-import logoImage from "../assets/images/logo.jpg";
+import logoImage from "../assets/images/logo.svg";
 import { siteContent } from "../content/siteContent";
 import { contact } from "../config/contact";
 import MaterialSymbolIcon from "./icons/MaterialSymbolIcon.vue";

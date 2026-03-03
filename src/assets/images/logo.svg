@@ -1,0 +1,19 @@
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#102210" rx="48"/>
+  
+  <!-- Main shape: Stylized "H" representing growth and infrastructure -->
+  <g fill="#11d411">
+    <!-- Left vertical bar -->
+    <rect x="48" y="48" width="24" height="96" rx="8"/>
+    
+    <!-- Right vertical bar -->
+    <rect x="120" y="48" width="24" height="96" rx="8"/>
+    
+    <!-- Horizontal connector bar -->
+    <rect x="48" y="84" width="96" height="24" rx="8"/>
+  </g>
+  
+  <!-- Accent: Top element for growth/upward movement -->
+  <path d="M 96 32 L 108 56 L 84 56 Z" fill="#11d411" opacity="0.8"/>
+</svg>

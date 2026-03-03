@@ -1,6 +1,6 @@
-# UPP WWW
+# Hugest SA
 
-Proyecto web de UPP usando Vue + TypeScript + Tailwind, tomando como referencia visual y de contenido una referencia HTML inicial ya migrada al código Vue.
+Proyecto web de Hugest SA usando Vue + TypeScript + Tailwind, tomando como referencia visual y de contenido una referencia HTML inicial ya migrada al código Vue.
 
 ## Estado
 

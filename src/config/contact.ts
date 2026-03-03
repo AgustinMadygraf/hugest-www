@@ -1,4 +1,4 @@
 export const contact = {
-  whatsappNumber: "+54 9 11 2693-5682",
-  phoneNumber: "+54 9 11 2693-5682",
+  whatsappNumber: "+54 9 11 3336-7451",
+  phoneNumber: "+54 9 11 3336-7451",
 };
